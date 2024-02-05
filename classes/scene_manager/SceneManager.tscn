@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bq2aw7wj34m7s"]
+
+[ext_resource type="Script" path="res://classes/scene_manager/sceneManager.gd" id="1_eh3b4"]
+
+[node name="SceneManager" type="Node2D"]
+script = ExtResource("1_eh3b4")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="addNextScene"]
