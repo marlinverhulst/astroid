@@ -16,7 +16,5 @@ func makeInvisable(b: bool) -> void:
 
 func subsribeToBackspace() -> void:
 	if !subscriptionId:
-		print("Trying")
 		if get_parent().is_node_ready(): 
-			print("subscribing")
 			subscriptionId = get_parent().backspaceSubject.subscribe(callBack)

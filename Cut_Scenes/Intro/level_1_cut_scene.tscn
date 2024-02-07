@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgptpyd1182y3"]
+
+[ext_resource type="Script" path="res://Cut_Scenes/Intro/level_1_cut_scene.gd" id="1_eqo44"]
+[ext_resource type="PackedScene" uid="uid://cmntxr5l8nmv" path="res://assets/dropship/drop_ship.tscn" id="2_fipia"]
+[ext_resource type="PackedScene" uid="uid://cbpbajevn8a6d" path="res://assets/cutscene_player/cutscene_player.tscn" id="2_guto6"]
+
+[node name="Level1_cut_scene" type="Node2D"]
+script = ExtResource("1_eqo44")
+
+[node name="cut_sceen_player_yellow" parent="." instance=ExtResource("2_guto6")]
+visible = false
+position = Vector2(-246, 69)
+rotation = 1.5708
+
+[node name="DropShip" parent="." instance=ExtResource("2_fipia")]
+position = Vector2(-244, 59)
