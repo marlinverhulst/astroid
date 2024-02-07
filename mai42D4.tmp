@@ -13,6 +13,7 @@ rootNode = NodePath("../Screen")
 [node name="Screen" type="Node" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 offset_left = 217.0
 offset_top = 155.0
 offset_right = 257.0
