@@ -24,3 +24,5 @@ script = ExtResource("2_igpdw")
 script = ExtResource("3_vqyyb")
 
 [node name="DemoPlayer" type="Node" parent="."]
+
+[node name="playfield" type="Node" parent="."]

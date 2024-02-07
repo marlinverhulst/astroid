@@ -1,8 +1,44 @@
-[gd_scene format=3 uid="uid://4hiptc1hyll2"]
+[gd_scene load_steps=3 format=3 uid="uid://4hiptc1hyll2"]
+
+[sub_resource type="Animation" id="Animation_wmcpv"]
+resource_name = "text"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Label:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.870588, 0.870588, 0.870588, 1), Color(0.490196, 0.490196, 0.490196, 0.227451)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lmrvp"]
+_data = {
+"text": SubResource("Animation_wmcpv")
+}
 
 [node name="LoadinScreen" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 480.0
 offset_bottom = 270.0
-color = Color(1, 0.211765, 1, 1)
+color = Color(0.0117647, 0.0156863, 0.054902, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_lmrvp")
+}
+autoplay = "text"
+
+[node name="Label" type="Label" parent="AnimationPlayer"]
+offset_left = 390.0
+offset_top = 241.0
+offset_right = 466.0
+offset_bottom = 264.0
+theme_override_colors/font_color = Color(0, 0, 0, 0)
+text = "LOADING"

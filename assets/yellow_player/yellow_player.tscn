@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1asadvfok3a8"]
+
+[ext_resource type="Texture2D" uid="uid://dwjhhv2kggdp0" path="res://assets/cutscene_player/player_yellow.png" id="1_82yah"]
+
+[node name="yellow_player" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_82yah")
