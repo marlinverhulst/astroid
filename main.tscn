@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dpl5mm0rm7jq2"]
+[gd_scene load_steps=3 format=3 uid="uid://dpl5mm0rm7jq2"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_xcrr2"]
 [ext_resource type="PackedScene" uid="uid://bq2aw7wj34m7s" path="res://classes/scene_manager/SceneManager.tscn" id="2_g30r7"]
-[ext_resource type="Script" path="res://ColorRect.gd" id="3_w8bl6"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_xcrr2")
@@ -11,10 +10,3 @@ script = ExtResource("1_xcrr2")
 rootNode = NodePath("../Screen")
 
 [node name="Screen" type="Node" parent="."]
-
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = 217.0
-offset_top = 155.0
-offset_right = 257.0
-offset_bottom = 195.0
-script = ExtResource("3_w8bl6")
