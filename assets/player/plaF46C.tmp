@@ -1,9 +1,9 @@
 [gd_scene load_steps=23 format=3 uid="uid://dnuxvnhpbldst"]
 
+[ext_resource type="Script" path="res://assets/player/player.gd" id="1_ash26"]
 [ext_resource type="Texture2D" uid="uid://c74of65ktyafd" path="res://assets/player/kit-sprites.png" id="1_fndxd"]
 [ext_resource type="Script" path="res://assets/player/player_state_machine.gd" id="1_m5ah7"]
 [ext_resource type="Script" path="res://assets/player/states/Player_Idle.gd" id="4_6aa88"]
-[ext_resource type="Script" path="res://assets/player/states/Player_Jump.gd" id="5_ertph"]
 [ext_resource type="Script" path="res://assets/player/states/Player_Walk.gd" id="5_jafny"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i2ccl"]
@@ -131,6 +131,7 @@ radius = 11.0
 script = ExtResource("1_m5ah7")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_ash26")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 position = Vector2(2, 0)
@@ -150,4 +151,3 @@ script = ExtResource("4_6aa88")
 script = ExtResource("5_jafny")
 
 [node name="Jump" type="Node" parent="States"]
-script = ExtResource("5_ertph")
