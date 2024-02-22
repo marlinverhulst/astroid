@@ -141,6 +141,12 @@ animation = &"walk"
 position = Vector2(-2, 5)
 shape = SubResource("CapsuleShape2D_7q0iv")
 
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+offset = Vector2(0, -50)
+limit_left = 0
+drag_horizontal_enabled = true
+drag_horizontal_offset = 0.04
+
 [node name="States" type="Node" parent="."]
 
 [node name="Idle" type="Node" parent="States"]

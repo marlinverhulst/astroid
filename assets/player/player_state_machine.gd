@@ -2,6 +2,7 @@ extends StateMachine
 
 @onready var sprite = $CharacterBody2D/AnimatedSprite2D
 @onready var character = $CharacterBody2D
+@onready var camera = $CharacterBody2D/Camera2D
 const SPEED = 200.0
 const JUMP_VELOCITY = -300.0
 var gravity = 450
@@ -20,4 +21,5 @@ var stateNames = {
 }
 
 func _ready():
+	camera.enabled = true
 	initStateMachine(states, stateNames.Idle)
